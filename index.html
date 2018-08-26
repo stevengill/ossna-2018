@@ -7,7 +7,9 @@
 		<title>reveal.js</title>
 
 		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/black.css">
+        <link rel="stylesheet" href="css/theme/black.css">
+
+       <!-- <link rel="stylesheet" href="css/app.css">-->
 
 		<!-- Theme used for syntax highlighting of code -->
 		<link rel="stylesheet" href="lib/css/zenburn.css">
@@ -24,17 +26,56 @@
 	<body>
 		<div class="reveal">
 			<div class="slides">
-                <section><h1>Open Source Culture @ Adobe<h1></section>
                 <section>
-                    <h2>Adobe & Open Source === ???</h2>
-                        <aside class="notes">
-                            Who here thinks of Adobe as an open source company? (not many hands go up) You aren't alone, it's not often that you hear Adobe and Open Source together.
-                        </aside>
+                    <h2>Changing Open Source Culture @Adobe</h2>
+                    <aside class="notes">Intro ourselves</aside>
                 </section>
                 <section>
-                    Show stats from Tobi's OS company poll
-                    <aside class="notes">Discuss the results from the poll. Discuss that fact that Adobe does have contributing to open source projects. Mainly in the apache space, Flex, jackrabbit, etc. Maybe it is a preception problem? Probably a part of it, but for the most part, the perception is correct. And it stems from the lack of open source culture at Adobe
+                    <h2>Adobe & Open Source === ???</h2>
+                    <aside class="notes">
+                        Adobe and Open Source don't traditionally go hand in hand.
+                        Interestingly, Adobe has been involved in OS. Like open sourcing
+                        flex and contributing to various other Apache projects. 
+                        You still wouldn't thing of adobe as an open source company.
+                        Is this a preception problem or something else?
                     </aside>
+                </section>
+                <section>
+                    <blockquote class="twitter-tweet tw-align-center" data-lang="en">
+                        <p lang="en" dir="ltr">What does it mean to be &quot;an open source company?&quot;</p>&mdash; Tobie Langel (@tobie)
+                        <a href="https://twitter.com/tobie/status/1004264699817594880?ref_src=twsrc%5Etfw">June 6, 2018</a>
+                    </blockquote>
+                    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                    <p class="fragment fade-in">employees contirbute to OS projects on company time</p>
+                    <p class="fragment fade-in">company sponsors OS events</p>
+                    <p class="fragment fade-in">company OS internal code</p>
+                </section>
+                <section>
+                    <blockquote class="twitter-tweet tw-align-center" data-conversation="none" data-lang="en">
+                        <p lang="en" dir="ltr">Is
+                            <a href="https://twitter.com/mozilla?ref_src=twsrc%5Etfw">@mozilla</a> an &quot;open source company?&quot;</p>&mdash; Tobie Langel (@tobie)
+                        <a href="https://twitter.com/tobie/status/1004285354034302976?ref_src=twsrc%5Etfw">June 6, 2018</a>
+                    </blockquote>
+                    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                </section>
+                <section>
+                    <blockquote class="twitter-tweet tw-align-center" data-conversation="none" data-lang="en">
+                        <p lang="en" dir="ltr">Is
+                            <a href="https://twitter.com/Microsoft?ref_src=twsrc%5Etfw">@Microsoft</a> an &quot;open source company?&quot;</p>&mdash; Tobie Langel (@tobie)
+                        <a href="https://twitter.com/tobie/status/1004284861559996417?ref_src=twsrc%5Etfw">June 6, 2018</a>
+                    </blockquote>
+                    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>    
+                </section>
+                <section>
+                    <blockquote class="twitter-tweet tw-align-center" data-conversation="none" data-lang="en">
+                        <p lang="en" dir="ltr">Is
+                            <a href="https://twitter.com/Adobe?ref_src=twsrc%5Etfw">@Adobe</a> an &quot;open source company?&quot;</p>&mdash; Tobie Langel (@tobie)
+                        <a href="https://twitter.com/tobie/status/1004343098594480128?ref_src=twsrc%5Etfw">June 6, 2018</a>
+                    </blockquote>
+                    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                </section>
+                <section>
+                    <h2>What are the Problems?</h2>
                 </section>
                 <section>
                     <h2>Adobe's Open Source Office</h2>
@@ -125,7 +166,7 @@ Created a list of all of the orgs that exist on GitHub, try to consolidate into 
                 </section>
                 <section>
                     Executive Buy In Needed
-                    <aside class="notes"></aside>
+                    <aside class="notes">Talk about top 25 and linking open source with business strategy</aside>
                 </section>
                 <section>
                     Top 25 company at GitHub
@@ -160,8 +201,8 @@ Created a list of all of the orgs that exist on GitHub, try to consolidate into 
 			Reveal.initialize({
 				dependencies: [
 					{ src: 'plugin/markdown/marked.js' },
-					{ src: 'plugin/markdown/markdown.js' },
-					{ src: 'plugin/notes/notes.js', async: true },
+                    { src: 'plugin/markdown/markdown.js' },
+                    { src: 'plugin/notes/notes.js', async: true },
 					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
 				]
 			});
