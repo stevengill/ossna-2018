@@ -48,9 +48,11 @@
                     <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
                     <ul>
                         <li class="fragment fade-in">Employees contribute to OS projects on company time</li>
-                        <li class="fragment fade-in">Company is responsible for OS project stewardship</p>
-                        <li class="fragment fade-in">Company sponsors OS events</p>
-                        <li class="fragment fade-in">Company OS internal code</p>
+                        <li class="fragment fade-in">Company sponsors OS
+                                events</li>
+                        <li class="fragment fade-in">Company OS internal code
+                                &amp; is responsible for OS project
+                                stewardship</li>
                     </ul>
                     
                 </section>
@@ -77,6 +79,10 @@
                         <a href="https://twitter.com/tobie/status/1004343098594480128?ref_src=twsrc%5Etfw">June 6, 2018</a>
                     </blockquote>
                     <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                    <aside class="notes">
+                        Fil: And unsurprisingly, perhaps, Adobe does not have a
+                        great reputation in the open source world!
+                    </aside>
                 </section>
                 <section>
                     <h2>What are the Problems?</h2>
@@ -91,18 +97,27 @@
                         <li class="fragment fade-in">Composed of Legal, Compliance, Patent, Branding</li>
                         <li class="fragment fade-in">Took months to complete</li>
                     </ul>
-                    <aside class="notes">Steve: Emails were easily lost in inboxes.
-                        Each team ran their own process, 
-                        documented seperately from each other. </aside>
+                    <aside class="notes">Steve:<br/> 
+                    - Emails were easily lost in inboxes.<br/>
+                    - Each team ran their own process, documented seperately from each other.<br/>
+                    - Very long time<br/>
+                    </aside>
                 </section>
                 <section>
                     <h3>Employees avoided or ignored the process</h3>
                     <ul>
                         <li class="fragment fade-in">Gave up on existing OS submissions</li>
-                        <li class="fragment fade-in">Legal became the boogyman</li>
+                        <li class="fragment fade-in">Legal became the "boogyman"</li>
                         <li class="fragment fade-in">Started pushing to GitHub without approval (Big Risk)</li>
                     </ul>
-                    <aside class="notes"></aside>
+                    <aside class="notes">Steve:<br/> 
+                    - gave up or avoided the existing process<br/>
+                    - teams started avoiding legal. they did everything they
+                    could to not initiate contact<br/>
+                    - so the end result was pushing into the public domain
+                    without approval - BIG RISK if you talk to your legal
+                    friends!<br/>
+                    </aside>
                 </section>
                 <section>
                     <h3>Wild West on GitHub</h3>
@@ -110,10 +125,11 @@
                         <li class="fragment fade-in">35 Adobe related GitHub Orgs</li>
                         <li class="fragment fade-in">Repos abandoned, issues and PRs ignored</li>
                     </ul>
-                    <aside class="notes">Steve: Without a central solution, the easiest
-                        way forward was for teams to create and manage their own 
-                        org. We ended up with 35 Adobe related GitHub orgs.
-                        With no commitment to continue to support, many of those 
+                    <aside class="notes">Steve: <br/>
+                    - there was no central solution<br/>
+                    - the easiest way forward was for teams to create and manage their own 
+                    org. We ended up with 35 Adobe related GitHub orgs.</br>
+                    - With no commitment to continue to support, many of those 
                         35 orgs were abondanded without any notice. 
                         Sad to see issues and pull requests ignored for years. 
                         No central authority to provide guidelines around 
@@ -121,14 +137,16 @@
                 </section>
                 <section>
                     <h2>Adobe's Open Source Office</h2>
-                    <aside class="notes">Steve: To deal with these probelms, we formed
-                        the OSO at the end of 2016 with the goals of improving 
-                        the open source culture at Adobe. It was a grass roots 
-                        type effort, with us only working on it part time. 
-                        The original members were essentially volunteers as they
-                        responsibilities part of their day jobs. But the thing 
+                    <aside class="notes">Steve:<br/>
+                            - To deal with these problems, we formed
+                            the OSO at the end of 2016.<br/>
+                        - It was a grass roots 
+                        type effort, with us only working on it part time. <br/>
+                        - The original members were essentially volunteers as they
+                        had other responsibilities as part of their day jobs.<br/>
+                        - The thing 
                         that brought them together was a shared love of open 
-                        source and their desire to have Adobe to give back to 
+                        source and their desire to have Adobe give back to 
                         the community. 
                     </aside>
                 </section>
@@ -143,15 +161,20 @@
                 <section style="padding-top:0px;">
                     Starter repo
                     <img src="images/starter-repo.png" style="margin-top: 0" />
-                    <aside class="notes">Steve: One of the first things we did was
-                        a starter-repo. This contained the necessesary files
-                        for open source projects which you can see in the image. 
-                        Code of conduct was based on the popular Contributor 
-                        Covenant code of conduct. We give out sample 
-                        contirbuting.md and issue and pull request templates. 
-                        Our main license we recommendis Apache V2, but as you 
-                        can see we also have the MIT license for docs and 
-                        sample code.</aside>
+                    <aside class="notes">Steve:<br/>
+                            - One of the first things we did was create
+                        a starter-repo.<br/>
+                        - This contained the necessesary files
+                        for open source projects such as:<br/>
+                        - a readme file describing the basics<br/>
+                        - a contributing.md file to help newcomers get
+                        involved<br/>
+                        - Code of conduct based on the popular Contributor 
+                        Covenant code of conduct.<br/>
+                        - a license file was mandatory (apache 2 or
+                        MIT)<br/>
+                        - and optional issue and pull request templates 
+                        </aside>
                 </section>
                 <section>
                     <h2>Revamped OS Submission Process</h2>
@@ -164,22 +187,28 @@
                 <section style="padding-top:0px">
                     <img src="images/os-submission-checklist.png" style="margin-top: 0; width:51%" />
                     <aside class="notes">
-                        Steve: To manage the process, we created a git repo on our 
+                            Steve: <br/>
+                            - To manage the process, we created a git repo on our 
                         internal github. We put the checklist of all 
-                        of the requirements into a issue_template. Every
+                        of the requirements into a issue_template.<br/>
+                        - Every
                         submitter was required to create an issue in our repo 
                         and start filling out the checklist in the issue 
-                        template. One big benifit of this new process meant
+                        template.<br/>
+                        - One big benefit of this new process meant
                         that it was open and transparent. Anyone could view
                         previous submissions and see how they went. We wanted
-                        to remove the mystrey behind the approvals. Over time 
+                        to remove the mystery behind the approvals. <br/>
+                        - Over time 
                         and many discussions with various stakeholders, the list
                         grew to 53 items. The process was still daunting and 
-                        a little confusing. Our plan was for the checklist to
+                        a little confusing.<br/>
+                        - Our plan was for the checklist to
                         be a first pass. It was quick to get up and it allowed
                         us to build relationships with the stakeholders. It gave
-                        us at the open source office to learn the nuances
-                        of contributing to and open sourcing code. So earlier 
+                        us at the open source office time to learn the nuances
+                        of contributing to and open sourcing code.<br/>
+                        - So earlier 
                         this year, from our learnings, we launched the new open
                         source submission form. (Hand it off to Fil to talk about that)
                     </aside>
@@ -187,27 +216,39 @@
                 <section style="padding-top:0px">
                     <img src="images/os-submission-form.png" style="margin-top: 0; width:75%" />
                     <aside class="notes">
-                        Fil: The new submission form is radically simplier. We 
-                        decided to remove the ambigous questions for more
-                        simple and direct ones. Easier to understand for 
-                        developers instead of lawyers. We created categorizes of 
+                            Fil: The new submission form is radically simpler.<br/>
+                            - We 
+                        decided to remove the ambiguous questions for more
+                        simple and direct ones - easier to understand for 
+                        developers (i.e. not written by lawyers).<br/>
+                        - We created categorizes of 
                         open source projects that the open source office would
                         be able to approve without going through all of the 
-                        stakeholders.
-
-                        Users loged in with their enterprise Git account.
-                        Todo: write more
+                        stakeholders.<br/>
+                        - It bolted on top of the existing process - Users
+                        logged in with their enterprise Git account, and issues
+                        were submitted to the existing issue tracker. No
+                        surprises for anynone already involved, just a nice UI
+                        on top of existing process.<br/>
+                        - Shout out to Joni to helping us make the experience
+                        much better.
                     </aside>
                 </section>
                 <section style="padding-top:0px">
-                    New Whitelist and Blacklist
+                    <h2>New Approvelist and Denylist</h2>
                     <img src="images/approveListMsg.png"  style="margin-top: 0; width: 68%" />
                     <aside class="notes">Fil: We also created
-                        a whitelist and blacklist of previously approved 
-                        projects. This means if you . We integratated these 
-                        lists right into our submission form to give out instant
-                        approvals and denials. This greatly sped up how long
-                        it took to get os approvals. </aside>
+                        a approvelist of previously approved 
+                        projects as well as a denylist of projects that were out
+                        of bounds. <br/>
+                        - This means if one employee received approval for
+                        contributing to a project, all other Adobe employees
+                        could do so as well without needing to fill out forms or
+                        ask for permission.<br/>
+                        - We integratated these 
+                        lists right into our submission form to give instant
+                        approvals or denials. This significantly sped up our
+                        approval times. </aside>
                 </section>
                  
                 <section style="padding-top:0px">
@@ -246,10 +287,15 @@
                     </ul>
 
                     <aside class="notes">
-                        Fil: Removed 100 inactive members on GitHub.com/adobe. Worked
+                            Fil: <br/>
+                            - Removed 100 inactive members on
+                            GitHub.com/adobe.<br/>
+                            - Worked
                         with enterprise security team to automate onboarding and
-                        offboarding for the org. Creating a mapping of adobe IDs
-                        to GitHub usernames. Created a list of all of the orgs 
+                        offboarding for the org.<br/>
+                        - Created a mapping of adobe IDs
+                        to GitHub usernames.<br/>
+                        - Created a list of all of the orgs 
                         that exist on GitHub, try to consolidate into main 
                         github.com/adobe org.
                     </aside>
@@ -292,30 +338,32 @@
                     Open Development Template
                     <img src="images/open-development-template.png" style="margin-top: 0" />
                     <aside class="notes">
-                        Fil: The intent is to answer the question: “how can I create 
+                        Fil: The intent is to answer the questions: “how can I create 
                         a project that is open to newcomers, easy to involve 
                         yourself in, and scales as it grows in size?” Main 
                         areas, with a focus on answering why and how to 
-                        document:
-                            Mission: what are the goals of the project? 
-                            Licensing: what is it, what kinds exist out there? 
-                            Governance: how do we add people to the project? Who 
+                        document:<br/>
+                        -  Mission: what are the goals of the project? <br/>
+                        - Licensing: what is it, what kinds exist out there?
+                        <br/>
+                        - Governance: how do we add people to the project? Who 
                                 has permissions in the project? What are the 
-                                social rituals in the project? 
-                            Process: how does the project get work done? 
-                        Developed internally to help teams grow c
-                        ross-organizational projects that involve people from 
+                                social rituals in the project?<br/> 
+                        - Process: how does the project get work done? <br/>
+                        Developed internally to help teams grow cross-organizational projects that involve people from 
                         all across the company. It is a grass-roots effort to 
                         subvert the typical corporate hierarchical organization 
-                        form and its limitations. 
+                        form and its limitations. <br/>
                         
-                        We are dogfooding this process within the office, in 
+                        - We are dogfooding this process within the office, in 
                         order to make it more open and inviting for anyone to 
-                        jump in and help out: 
-                            2 week sprints, everything in the open
-                            
-                        Added to our starter repo for new projects to get our 
-                        suggested governance model
+                        jump in and help out. We've made a few things about the
+                        way we work explicit, such as:<br/>
+                            - 2 week sprints
+                            - everything in the open
+                            - self-assigned issues
+                            - accountability around what's assigned each sprint
+                            meeting
                     </aside>
                 </section>
                 <section>
@@ -323,8 +371,6 @@
                     <aside class="notes">
                         Steve: We've had 4 of these now. Great way to share talks and 
                         build a community around open source within the company. 
-                        Always strived to get strong keynotes from within the 
-                        company.
                     </aside>
                 </section>
                 <section>
@@ -337,10 +383,13 @@
                     
                     <aside class="notes">Steve: Part of the OS Summits, we always take
                         time to give out OS awards. We have two main categorizes
-                        we hand out for. Top contributor which is based on data
+                        we hand out for:<br/>
+                        - Top contributor which is based on data
                         we pull from GitHub (which we will touch on in a few 
-                        slides). Outstanding OS contributor which is based on 
-                        nominations from the company. We have been working on a
+                        slides).<br/>
+                        - Outstanding OS contributor which is based on 
+                        nominations from the company.<br/>
+                        - We have been working on a
                         formal employee recognition program for OS which we hope
                         to launch this year after we pitch it to some execs.
                     </aside>
@@ -361,19 +410,19 @@
                         Steve: It was really important for us to have ways to 
                         communicate with our internal OS community as well as
                         promote Adobe OS projects to external developer 
-                        communites. 
+                        communites.<br/> 
                         
-                        First we created the internal developer
+                        - First we created the internal developer
                         newsletter. It wasn't focused on just open source, but
                         all internal tech news. We added every developer
                         at the company to the newsletter. We use a git repo to 
-                        take submissions for what to include.
+                        take submissions for what to include.<br/>
 
-                        We also created #guild-opensource. A company wide slack
+                        - We also created #guild-opensource. A company wide slack
                         channel to for all of the os enthusiests to gather and 
-                        discuss whatever is on their mind.
+                        discuss whatever is on their mind.<br/>
 
-                        Tech Blog and twitter for external promotion of OS work
+                        - Tech Blog and twitter for external promotion of OS work
                         Adobe employees are doing. New projects + community
                         contributions.
                     </aside>
